@@ -11,9 +11,15 @@
 <form>
     <div style="float: left;">
         <table>
-            <tr><td><a id="link1" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/a.html</a></td></tr>
-            <tr><td><a id="link2" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/b.html</a></td></tr>
-            <tr><td><a id="link3" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/c.html</a></td></tr>
+            <tr>
+                <td><a id="link1" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/a.html</a></td>
+            </tr>
+            <tr>
+                <td><a id="link2" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/b.html</a></td>
+            </tr>
+            <tr>
+                <td><a id="link3" onclick="ajax2(this,'targetDiv')">/ajax/ejercicio2/c.html</a></td>
+            </tr>
         </table>
     </div>
     <div id="targetDiv"></div>

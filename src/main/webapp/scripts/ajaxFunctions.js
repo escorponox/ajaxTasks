@@ -48,7 +48,7 @@ function ajax3(select) {
         success: function (xml) {
             x = xml.documentElement.getElementsByTagName('usuario');
             for (var i = 0; i < x.length; i++) {
-                if(x[i].getAttribute('id') == id){
+                if (x[i].getAttribute('id') == id) {
                     $('#provDiv')[0].innerHTML = x[i].getElementsByTagName('provincia')[0].firstChild.nodeValue;
                     $('#ciudadDiv')[0].innerHTML = x[i].getElementsByTagName('ciudad')[0].firstChild.nodeValue;
                     $('#dirDiv')[0].innerHTML = x[i].getElementsByTagName('direccion')[0].firstChild.nodeValue;
