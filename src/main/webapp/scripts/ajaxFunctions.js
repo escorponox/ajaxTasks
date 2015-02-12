@@ -61,3 +61,30 @@ function ajax3(select) {
         }
     });
 }
+
+function ajax4(formId) {
+
+    var datos = $('#' + formId).serialize();
+    var output;
+    $('#outputTable').remove();
+
+    $.ajax({
+        type: "GET",
+        url: "/ajax/ajax4",
+        data: datos,
+        dataType: "json",
+        success: function (data) {
+
+            output = '<table id="outputTable">';
+            for (var key in data) {
+                output += '<tr><td>' + key + '</td><td>' + data[key] + '</td></tr>';
+            }
+            output += '</table>';
+            $('#form').append(output);
+        }
+        ,
+        error: function () {
+            alert("Error");
+        }
+    });
+}

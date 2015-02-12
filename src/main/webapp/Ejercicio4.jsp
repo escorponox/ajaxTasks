@@ -13,18 +13,18 @@
         <table>
             <tr>
                 <td><label for="input1">input1: </label></td>
-                <td><input type="text" id="input1"/></td>
+                <td><input type="text" name="input1" id="input1"/></td>
             </tr>
             <tr>
                 <td><label for="input2">input2: </label></td>
-                <td><input type="text" id="input2"/></td>
+                <td><input type="text" name="input2" id="input2"/></td>
             </tr>
             <tr>
                 <td><label for="input3">input3: </label></td>
-                <td><input type="text" id="input3"/></td>
+                <td><input type="text" name="input3" id="input3"/></td>
             </tr>
         </table>
-        <a id="submit" onclick="ajax4()">Submit</a>
+        <a id="submit" onclick="ajax4('elForm')">Submit</a>
     </div>
 </form>
 </body>
